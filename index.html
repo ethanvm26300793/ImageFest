@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImageFest - Search Images!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-content">
+            <h1>Lumina Lens</h1>
+            <p class="tagline">Discover high-resolution photography instantly.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <form id="search-form" onsubmit="event.preventDefault();">
+                <label for="search-input">Find your next inspiration:</label>
+                <div class="input-group">
+                    <input type="search" id="search-input" placeholder="e.g., night photography, neon cities...">
+                    <button type="submit" id="search-btn">Search</button>
+                </div>
+            </form>
+
+            <div class="category-chips">
+                <span class="chip">Nature</span>
+                <span class="chip">Architecture</span>
+                <span class="chip">Portraits</span>
+                <span class="chip">Macro</span>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <p id="empty-state">Search above to reveal stunning images.</p>
+            <div id="results" class="results-grid">
+                <!-- Images will be injected here in Part 2 -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
