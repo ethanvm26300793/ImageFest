@@ -98,7 +98,7 @@ body {
     opacity: 0.8;
 }
 
-/* Category Chips (Original Feature 1) */
+/* Category Chips */
 .category-chips {
     display: flex;
     gap: 10px;
@@ -123,7 +123,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Results Grid & Empty State (Original Feature 2) */
+/* Results Grid & Empty State */
 .results-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -134,7 +134,7 @@ body {
 #empty-state {
     color: var(--text-muted);
     font-size: 1.2rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-style: italic;
 }
 
@@ -142,5 +142,36 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 2rem;
+}
+
+/* Dynamically Injected Image Cards */
+.image-card {
+    background-color: var(--surface-color);
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.image-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-card h3 {
+    font-size: 0.9rem;
+    padding: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
