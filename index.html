@@ -27,13 +27,17 @@
             <div class="category-chips">
                 <span class="chip">Nature</span>
                 <span class="chip">Architecture</span>
-                <span class="chip">Portraits</span>""
+                <span class="chip">Portraits</span>
                 <span class="chip">Macro</span>
             </div>
         </section>
 
         <section class="results-section">
-            <p id="empty-state">Search above to reveal stunning images.</p>
+            <div id="status-container">
+                <div id="loading-spinner" class="hidden"></div>
+                <p id="empty-state">Search above to reveal stunning images.</p>
+            </div>
+            
             <div id="results" class="results-grid"></div>
         </section>
     </main>
